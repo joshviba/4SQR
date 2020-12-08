@@ -14,7 +14,7 @@ using namespace sf;
 
 */
 int main() {
-    // Declare engin
+    // Declare engine
     Engine engine;
     // Start engine
     engine.start();

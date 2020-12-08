@@ -1,7 +1,7 @@
 #include "ApproachSquare.h"
 #include "stdafx.h"
 
-ApproachSquare::ApproachSquare(int x, int y, Time dT)
+ApproachSquare::ApproachSquare(int x, int y, Time hitTime)
 {
 	m_Texture.loadFromFile("approach.png");
 	m_Sprite.setTexture(m_Texture);
@@ -10,7 +10,7 @@ ApproachSquare::ApproachSquare(int x, int y, Time dT)
 	m_Position.x = x;
 	m_Position.y = y;
 
-	m_Time = dT;
+	m_Time = hitTime;
 }
 
 Sprite ApproachSquare::getSprite()

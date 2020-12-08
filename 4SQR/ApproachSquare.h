@@ -12,7 +12,7 @@ private:
 	Vector2f m_Position;
 	Time m_Time;
 public:
-	ApproachSquare(int x, int y, Time dT);
+	ApproachSquare(int x, int y, Time hitTime);
 	// Getters
 	Sprite getSprite();
 	// Gets called every frame

@@ -5,12 +5,12 @@ Engine::Engine()
 {
     // Get the screen resolution and create an SFML window and View
     Vector2f resolution;
-    resolution.x = VideoMode::getDesktopMode().width;
-    resolution.y = VideoMode::getDesktopMode().height;
+    resolution.x = VideoMode::getDesktopMode().width/2;
+    resolution.y = VideoMode::getDesktopMode().height/2;
     
     m_Window.create(VideoMode(resolution.x, resolution.y),
         "Simple Game Engine",
-        Style::Fullscreen);
+        Style::Default);
 
     // Load the background into the texture
     // Be sure to scale this image to your screen size

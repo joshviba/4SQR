@@ -1,2 +1,43 @@
-﻿  Player.cpp
+﻿  Draw.cpp
+C:\Users\joshv\source\repos\4SQR\4SQR\Engine.h(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  Engine.cpp
+C:\Users\joshv\source\repos\4SQR\4SQR\Engine.h(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\joshv\source\repos\4SQR\4SQR\Engine.cpp(8,53): warning C4244: '=': conversion from 'unsigned int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\joshv\source\repos\4SQR\4SQR\Engine.cpp(9,54): warning C4244: '=': conversion from 'unsigned int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\joshv\source\repos\4SQR\4SQR\Engine.cpp(11,55): warning C4244: 'argument': conversion from 'T' to 'unsigned int', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\joshv\source\repos\4SQR\4SQR\Engine.cpp(11,41): warning C4244: 'argument': conversion from 'T' to 'unsigned int', possible loss of data
+          with
+          [
+              T=float
+          ]
+  HitSquare.cpp
+C:\Users\joshv\source\repos\4SQR\4SQR\HitSquare.cpp(7,16): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\joshv\source\repos\4SQR\4SQR\HitSquare.cpp(7,13): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+  Input.cpp
+C:\Users\joshv\source\repos\4SQR\4SQR\Engine.h(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  Update.cpp
+C:\Users\joshv\source\repos\4SQR\4SQR\Engine.h(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  main.cpp
+C:\Users\joshv\source\repos\4SQR\4SQR\Engine.h(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  Generating Code...
   4SQR.vcxproj -> C:\Users\joshv\source\repos\4SQR\Debug\4SQR.exe

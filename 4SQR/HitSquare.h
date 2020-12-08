@@ -13,9 +13,13 @@ private:
     // HitSquare variables;
     char m_Type;
     Vector2f m_Position;
-    Time m_Time;
+    Time m_HitTime;
     ApproachSquare m_Approach;
+    bool m_ButtonPressed;
 
+    // HitSquare constants
+    const float SCALE_MODIFIER = 0.25f;
+    const float SCALE_MODIFIER_HIGH_RES = 0.125f;
     // Private functions for internal use only
 
 
@@ -26,12 +30,11 @@ public:
     const char TYPE_GREEN = 'A';
     const char TYPE_YELLOW = 'D';
 
-    // The Engine constructor
-    HitSquare();
-    HitSquare(char type, int x, int y);
+    // The Class constructor
+    HitSquare(char type, int x, int y, Time hitTime);
     // Getters
     Sprite getSprite();
 
     // We will call this function once every frame
-    void update();
+    void update(float elapsedTime, int cursorX, int cursorY);
 };

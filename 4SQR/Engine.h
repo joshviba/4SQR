@@ -2,6 +2,7 @@
 #include <SFML/Graphics.hpp>
 #include "Player.h";
 #include "HitSquare.h"
+#include "MainMenu.h"
 
 using namespace sf;
 
@@ -18,10 +19,13 @@ private:
 
     // An instance of Player
     Player m_Player;
-    HitSquare m_Hit1;
-    HitSquare m_Hit2;
-    HitSquare m_Hit3;
-    HitSquare m_Hit4;
+    //HitSquare m_Hit1;
+    //HitSquare m_Hit2;
+    //HitSquare m_Hit3;
+    //HitSquare m_Hit4;
+
+
+
 
     // Private functions for internal use only
     void input();

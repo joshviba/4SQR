@@ -3,7 +3,22 @@
 
 Player::Player()
 {
-    Player::Player(0, 0);
+    // How fast does Bob move?
+    m_Speed = 400;
+
+    // Associate a texture with the sprite
+    m_Texture.loadFromFile("player.png");
+    m_Sprite.setTexture(m_Texture);
+    m_Sprite.setScale(0.25f, 0.25f);
+
+    // Set the Bob's starting position
+    m_Position.x = 0;
+    m_Position.y = 0;
+
+    m_LeftPressed = false;
+    m_RightPressed = false;
+    m_UpPressed = false;
+    m_DownPressed = false;
 }
 
 Player::Player(int x, int y)
