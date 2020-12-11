@@ -2,7 +2,6 @@
 #include <SFML/Graphics.hpp>
 #include "Player.h";
 #include "HitSquare.h"
-#include "MainMenu.h"
 
 using namespace sf;
 
@@ -18,12 +17,11 @@ private:
     Texture m_BackgroundTexture;
 
     // An instance of Player
-    Player m_Player;
+    //Player m_Player;
     //HitSquare m_Hit1;
     //HitSquare m_Hit2;
     //HitSquare m_Hit3;
     //HitSquare m_Hit4;
-
 
 
 

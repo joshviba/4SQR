@@ -1,4 +1,3 @@
-#include "stdafx.h"
 #include "Engine.h"
 
 void Engine::draw()
@@ -8,7 +7,7 @@ void Engine::draw()
 
     // Draw the background
     m_Window.draw(m_BackgroundSprite);
-    m_Window.draw(m_Player.getSprite());
+    //m_Window.draw(m_Player.getSprite());
     //m_Window.draw(m_Hit1.getSprite());
     //m_Window.draw(m_Hit2.getSprite());
     //m_Window.draw(m_Hit3.getSprite());

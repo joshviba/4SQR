@@ -1,4 +1,3 @@
-#include "stdafx.h"
 #include "Engine.h"
 
 Engine::Engine()
@@ -11,10 +10,10 @@ Engine::Engine()
     m_Window.create(VideoMode(resolution.x, resolution.y),
         "Simple Game Engine",
         Style::Default);
-
+    
     // Load the background into the texture
     // Be sure to scale this image to your screen size
-    m_BackgroundTexture.loadFromFile("background.jpg");
+    m_BackgroundTexture.loadFromFile("images/background.jpg");
 
     // Associate the sprite with the texture
     m_BackgroundSprite.setTexture(m_BackgroundTexture);

@@ -5,7 +5,6 @@ Author: Josue Villegas
 */
 
 // Include Statements
-#include "stdafx.h"
 #include "Engine.h"
 
 using namespace sf;

@@ -1,4 +1,3 @@
-#include "stdafx.h"
 #include "Engine.h"
 
 void Engine::input()
@@ -10,7 +9,7 @@ void Engine::input()
     }
 
     // Handle the player moving
-    if (Keyboard::isKeyPressed(Keyboard::A))
+    /**if (Keyboard::isKeyPressed(Keyboard::A))
     {
         m_Player.moveLeft();
     }
@@ -44,6 +43,6 @@ void Engine::input()
     else
     {
         m_Player.stopDown();
-    }
+    }*/
 
 }

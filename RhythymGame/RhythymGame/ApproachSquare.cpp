@@ -1,5 +1,4 @@
 #include "ApproachSquare.h"
-#include "stdafx.h"
 
 ApproachSquare::ApproachSquare(int x, int y, Time hitTime)
 {

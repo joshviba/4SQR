@@ -2,7 +2,7 @@
 
 using namespace sf;
 
-class ArcadeMode
+class ArcadeMenu
 {
 private:
 

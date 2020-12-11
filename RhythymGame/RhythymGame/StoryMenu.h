@@ -2,7 +2,7 @@
 
 using namespace sf;
 
-class StoryMode
+class StoryMenu
 {
 private:
 
