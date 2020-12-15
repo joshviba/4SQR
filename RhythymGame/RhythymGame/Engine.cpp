@@ -1,30 +1,32 @@
 #include "Engine.h"
 
-Engine::Engine()
+Engine::Engine(Vector2f res):
+    m_Menu(res),
+    m_Resolution(res)
 {
     // Get the screen resolution and create an SFML window and View
-    Vector2f resolution;
-    resolution.x = VideoMode::getDesktopMode().width/2;
-    resolution.y = VideoMode::getDesktopMode().height/2;
-    
-    m_Window.create(VideoMode(resolution.x, resolution.y),
+    //Vector2f resolution;
+    m_Window.create(VideoMode(m_Resolution.x, m_Resolution.y),
         "Simple Game Engine",
-        Style::Default);
-    
-    // Load the background into the texture
-    // Be sure to scale this image to your screen size
-    m_BackgroundTexture.loadFromFile("images/background.jpg");
+        Style::Fullscreen);
 
-    // Associate the sprite with the texture
-    m_BackgroundSprite.setTexture(m_BackgroundTexture);
-
+    if (!m_Font.loadFromFile("fonts/Comfortaa-SemiBold.ttf")) {
+        // error
+    }
+    frameRate.setFont(m_Font);
+    frameRate.setCharacterSize(50);
+    frameRate.setFillColor(sf::Color::Red);
+    frameRate.setPosition(m_Resolution.x - 250, 50);
 }
 
 void Engine::start()
 {
     // Timing
     Clock clock;
-
+    Clock delayClock;
+    bool delayInput = false;
+    float inputDelayTimeAsMiliseconds = 1.5f;
+    float timeSinceDelay = 0.0f;
     while (m_Window.isOpen())
     {
         // Restart the clock and save the elapsed time into dt
@@ -33,8 +35,14 @@ void Engine::start()
         // Make a fraction from the delta time
         float dtAsSeconds = dt.asSeconds();
 
-        input();
+        if (!delayInput) {
+            input();
+            timeSinceDelay = delayClock.restart().asSeconds();
+        }
         update(dtAsSeconds);
         draw();
+        if (timeSinceDelay >= inputDelayTimeAsMiliseconds) {
+            delayInput = false;
+        }
     }
 }

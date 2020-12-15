@@ -68,6 +68,9 @@
     <ClCompile Include="Update.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="MainMenu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="images\approach.png">
@@ -94,21 +97,42 @@
     <Image Include="images\player.png">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="images\mainMenuBG.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\logo.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\arcadeMode.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\continueGame.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\largeSelect.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\loadGame.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\storyMode.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
-    <Font Include="Comfortaa-Bold.ttf">
+    <Font Include="fonts\Comfortaa-Bold.ttf">
       <Filter>Resource Files</Filter>
     </Font>
-    <Font Include="Comfortaa-Light.ttf">
+    <Font Include="fonts\Comfortaa-Light.ttf">
       <Filter>Resource Files</Filter>
     </Font>
-    <Font Include="Comfortaa-Medium.ttf">
+    <Font Include="fonts\Comfortaa-Medium.ttf">
       <Filter>Resource Files</Filter>
     </Font>
-    <Font Include="Comfortaa-Regular.ttf">
+    <Font Include="fonts\Comfortaa-Regular.ttf">
       <Filter>Resource Files</Filter>
     </Font>
-    <Font Include="Comfortaa-SemiBold.ttf">
+    <Font Include="fonts\Comfortaa-SemiBold.ttf">
       <Filter>Resource Files</Filter>
     </Font>
   </ItemGroup>

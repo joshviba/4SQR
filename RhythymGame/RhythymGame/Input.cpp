@@ -5,7 +5,17 @@ void Engine::input()
     // Handle the player quitting
     if (Keyboard::isKeyPressed(Keyboard::Escape))
     {
-        m_Window.close();
+        if (m_Menu.onMainTitle()) {
+            m_Window.close();
+        }
+        else {
+            m_Menu.closeMenu();
+            
+        }
+    }
+
+    if (Mouse::isButtonPressed(Mouse::Left) || Mouse::isButtonPressed(Mouse::Right)) {
+        m_Menu.launchMenu();
     }
 
     // Handle the player moving

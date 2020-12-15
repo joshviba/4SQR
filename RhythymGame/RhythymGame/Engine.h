@@ -1,5 +1,6 @@
 #pragma once
 #include <SFML/Graphics.hpp>
+#include "MainMenu.h"
 #include "Player.h";
 #include "HitSquare.h"
 
@@ -11,19 +12,10 @@ private:
 
     // A regular RenderWindow
     RenderWindow m_Window;
-
-    // Declare a sprite and a Texture for the background
-    Sprite m_BackgroundSprite;
-    Texture m_BackgroundTexture;
-
-    // An instance of Player
-    //Player m_Player;
-    //HitSquare m_Hit1;
-    //HitSquare m_Hit2;
-    //HitSquare m_Hit3;
-    //HitSquare m_Hit4;
-
-
+    MainMenu m_Menu;
+    Vector2f m_Resolution;
+    Font m_Font;
+    Text frameRate;
 
     // Private functions for internal use only
     void input();
@@ -32,7 +24,7 @@ private:
 
 public:
     // The Engine constructor
-    Engine();
+    Engine(Vector2f res);
 
     // start will call all the private functions
     void start();

@@ -36,25 +36,33 @@
     <ClCompile Include="HitSquare.cpp" />
     <ClCompile Include="Input.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="MainMenu.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Update.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="images\approach.png" />
+    <Image Include="images\arcadeMode.png" />
     <Image Include="images\background.jpg" />
     <Image Include="images\bob.png" />
+    <Image Include="images\continueGame.png" />
     <Image Include="images\hitBlue.png" />
     <Image Include="images\hitGreen.png" />
     <Image Include="images\hitRed.png" />
     <Image Include="images\hitYellow.png" />
+    <Image Include="images\largeSelect.png" />
+    <Image Include="images\loadGame.png" />
+    <Image Include="images\logo.png" />
+    <Image Include="images\mainMenuBG.png" />
     <Image Include="images\player.png" />
+    <Image Include="images\storyMode.png" />
   </ItemGroup>
   <ItemGroup>
-    <Font Include="Comfortaa-Bold.ttf" />
-    <Font Include="Comfortaa-Light.ttf" />
-    <Font Include="Comfortaa-Medium.ttf" />
-    <Font Include="Comfortaa-Regular.ttf" />
-    <Font Include="Comfortaa-SemiBold.ttf" />
+    <Font Include="fonts\Comfortaa-Bold.ttf" />
+    <Font Include="fonts\Comfortaa-Light.ttf" />
+    <Font Include="fonts\Comfortaa-Medium.ttf" />
+    <Font Include="fonts\Comfortaa-Regular.ttf" />
+    <Font Include="fonts\Comfortaa-SemiBold.ttf" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
