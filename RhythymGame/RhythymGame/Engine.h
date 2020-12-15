@@ -16,6 +16,7 @@ private:
     Vector2f m_Resolution;
     Font m_Font;
     Text frameRate;
+    Clock m_DelayTimer;
 
     // Private functions for internal use only
     void input();

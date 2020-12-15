@@ -5,12 +5,12 @@ void Engine::input()
     // Handle the player quitting
     if (Keyboard::isKeyPressed(Keyboard::Escape))
     {
-        if (m_Menu.onMainTitle()) {
+        if (m_Menu.onMainTitle() && m_DelayTimer.getElapsedTime().asSeconds() > 0.5f) {
             m_Window.close();
         }
-        else {
+        else if (!m_Menu.onMainTitle()){
             m_Menu.closeMenu();
-            
+            m_DelayTimer.restart();
         }
     }
 

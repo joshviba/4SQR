@@ -38,7 +38,7 @@ MainMenu::MainMenu(Vector2f resolution) {
 	m_StoryModeSprite.setScale(scale);
 	m_StoryModeSprite.setPosition(position);
 
-	position.y += bgSize.y;
+	position.y += bgSize.y * scale.y;
 
 	m_ArcadeModeSprite.setScale(scale);
 	m_ArcadeModeSprite.setPosition(position);

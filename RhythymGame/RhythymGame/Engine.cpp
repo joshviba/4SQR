@@ -8,7 +8,7 @@ Engine::Engine(Vector2f res):
     //Vector2f resolution;
     m_Window.create(VideoMode(m_Resolution.x, m_Resolution.y),
         "Simple Game Engine",
-        Style::Fullscreen);
+        Style::Resize);
 
     if (!m_Font.loadFromFile("fonts/Comfortaa-SemiBold.ttf")) {
         // error
@@ -23,10 +23,6 @@ void Engine::start()
 {
     // Timing
     Clock clock;
-    Clock delayClock;
-    bool delayInput = false;
-    float inputDelayTimeAsMiliseconds = 1.5f;
-    float timeSinceDelay = 0.0f;
     while (m_Window.isOpen())
     {
         // Restart the clock and save the elapsed time into dt
@@ -34,15 +30,8 @@ void Engine::start()
 
         // Make a fraction from the delta time
         float dtAsSeconds = dt.asSeconds();
-
-        if (!delayInput) {
-            input();
-            timeSinceDelay = delayClock.restart().asSeconds();
-        }
+        input();
         update(dtAsSeconds);
         draw();
-        if (timeSinceDelay >= inputDelayTimeAsMiliseconds) {
-            delayInput = false;
-        }
     }
 }

@@ -14,7 +14,7 @@ using namespace sf;
 */
 int main() {
     // Declare engine
-    Engine engine(Vector2f(VideoMode::getDesktopMode().width, VideoMode::getDesktopMode().height));
+    Engine engine(Vector2f(VideoMode::getDesktopMode().width/2, VideoMode::getDesktopMode().height/2));
     // Start engine
     engine.start();
     // Quit game
